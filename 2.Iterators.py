@@ -6,7 +6,7 @@ class FlatIterator:
         self.list_iter = iter(self.multi_list)
         self.nested_list = []
         self.cursor = -1
-        yield
+        return self
 
     def __next__(self):
         self.cursor += 1
